@@ -1,0 +1,11 @@
+[package]
+name = "tileconf"
+version = "0.1.0"
+edition = "2021"
+description = "TUI configuration tool for the tile window manager"
+authors = ["Geir Isene <g@isene.com>"]
+license = "Unlicense"
+repository = "https://github.com/isene/tileconf"
+
+[dependencies]
+fe2o3-crust = { path = "../crust" }
