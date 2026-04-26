@@ -87,6 +87,12 @@ impl App {
                        kind: ItemKind::Number(0, 0, 32) },
                 Item { label: "Bar bg".into(),      key: "bar_bg",     help: "background of the row-of-squares strip",
                        kind: ItemKind::HexColor("#000000".into()) },
+                Item { label: "Layout colour".into(), key: "layout_color",
+                       help: "colour of the layout glyph (☰ / ‖ / =) between WS strip and tabs (blank = use Tab default)",
+                       kind: ItemKind::HexColor("".into()) },
+                Item { label: "Active frame".into(), key: "active_frame",
+                       help: "1-px outline drawn over the active WS square AND active tab (blank = no frame)",
+                       kind: ItemKind::HexColor("".into()) },
             ]},
             Category { name: "Workspaces".into(), items: {
                 let mut v = vec![
